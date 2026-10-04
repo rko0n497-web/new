@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بحث عن البرمائيات - راكان محمد ال موسى</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            font-size: 22px;
+            line-height: 1.8;
+            color: #2c3e50;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        .page {
+            background-color: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 20px auto;
+            padding: 25mm;
+            box-sizing: border-box;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        @media print {
+            body { background-color: white; padding: 0; margin: 0; }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+                width: 100%;
+                min-height: 100vh;
+                padding: 15mm;
+            }
+            .no-print { display: none; }
+        }
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #16a085;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-family: 'Cairo', sans-serif;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+        .print-btn:hover { background-color: #1abc9c; transform: scale(1.05); }
+
+        .cover-page {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 240mm;
+        }
+        .cover-header h1 { font-size: 32px; margin-bottom: 5px; color: #34495e; }
+        .cover-header h2 { font-size: 26px; margin-top: 0; color: #7f8c8d; }
+        .cover-title { font-size: 45px; font-weight: 700; color: #e74c3c; margin: 60px 0; padding: 30px; border: 4px double #e74c3c; border-radius: 15px; background-color: #fdf2f2; }
+        .cover-info { font-size: 24px; text-align: right; width: 75%; margin: 0 auto; background-color: #f8f9fa; padding: 30px; border-radius: 10px; border-right: 8px solid #16a085; }
+        .cover-info p { margin: 15px 0; font-weight: 600; }
+        .cover-info span { color: #2980b9; }
+
+        h1.main-title { text-align: center; color: #2c3e50; font-size: 30px; border-bottom: 3px solid #16a085; padding-bottom: 15px; margin-bottom: 30px; }
+        h2 { color: #16a085; font-size: 26px; margin-top: 40px; border-right: 6px solid #16a085; padding-right: 15px; background-color: #f4fcf9; padding-top: 5px; padding-bottom: 5px; }
+        h3 { color: #2980b9; font-size: 24px; margin-top: 25px; }
+        p { text-align: justify; margin-bottom: 20px; text-indent: 30px; }
+        ul, ol { margin-bottom: 25px; padding-right: 30px; }
+        li { margin-bottom: 12px; text-align: justify; }
+
+        .img-container { text-align: center; margin: 30px 0; page-break-inside: avoid; }
+        .img-container img { 
+            width: 100%; 
+            max-width: 650px; 
+            max-height: 400px; 
+            object-fit: contain; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            border: 2px solid #ecf0f1; 
+        }
+        .img-caption { font-size: 16px; color: #7f8c8d; margin-top: 10px; font-style: italic; }
+
+        .footer { position: absolute; bottom: 15mm; left: 25mm; right: 25mm; text-align: center; font-size: 16px; color: #95a5a6; border-top: 1px solid #ecf0f1; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn no-print" onclick="window.print()">🖨️ طباعة البحث / حفظ PDF</button>
+
+    <!-- صفحة الغلاف -->
+    <div class="page cover-page">
+        <div class="cover-header">
+            <h1>المملكة العربية السعودية</h1>
+            <h2>وزارة التعليم</h2>
+            <h2>مدرسة: ثانوية ابن باز</h2>
+        </div>
+        <div>
+            <div class="cover-title">بحث عن: البرمائيات</div>
+        </div>
+        <div class="cover-info">
+            <p>إعداد الطالب: <span>راكان محمد ال موسى</span></p>
+            <p>الصف: <span>الثاني ثانوي</span></p>
+            <p>الشعبة: <span>الأولى</span></p>
+            <p>المادة: <span>أحياء</span></p>
+            <p>إشراف المعلم: <span>حمد السبر</span></p>
+            <p>العام الدراسي: <span>1448 هـ</span></p>
+        </div>
+    </div>
+
+    <!-- صفحة المحتوى 1 -->
+    <div class="page">
+        <h1 class="main-title">مقدمة</h1>
+        <p>تُعد البرمائيات (Amphibians) من الكائنات الحية الفقارية التي تمثل حلقة وصل مهمة بين الحياة المائية والحياة البرية. كلمة "برمائي" مشتقة من الكلمة اليونانية التي تعني "كلا النوعين من الحياة"، مما يعكس قدرتها الفريدة على العيش في بيئتين مختلفتين تماماً. وتلعب البرمائيات دوراً حيوياً في التوازن البيئي، حيث تتغذى على الحشرات والآفات، وتُعد بدورها غذاءً للعديد من الكائنات الأخرى.</p>
+        
+        <h2>تعريف البرمائيات</h2>
+        <p>البرمائيات هي مجموعة من الحيوانات الفقارية ذات الدم البارد (متغير درجة الحرارة)، والتي تعتمد على البيئة المحيطة لتنظيم درجة حرارة أجسامها. تتميز بجلد رطب وأملس خالٍ من الحراشف (في معظم أنواعها)، وتتنفس من خلال الجلد والرئتين. تعيش معظم البرمائيات في البيئات الرطبة بالقرب من المسطحات المائية لضمان بقاء جلدها رطباً.</p>
+        
+        <div class="img-container">
+            <img src="https://i.postimg.cc/0y2qYT9k/images-(1).jpg" alt="ضفدع أخضر">
+            <div class="img-caption">شكل (1): ضفدع أخضر، أحد أشهر أنواع البرمائيات (صورة عالية الدقة).</div>
+        </div>
+
+        <h2>خصائص البرمائيات</h2>
+        <ul>
+            <li><strong>الجلد:</strong> جلد رطب يخلو من الحراشف والريش والشعر، مما يسمح بتبادل الغازات عبر الجلد (التنفس الجلدي).</li>
+            <li><strong>الجهاز الدوري:</strong> القلب يتكون من ثلاث حجرات (أذينين وبطين واحد) في معظم الأنواع، مما يؤدي إلى اختلاط جزئي للدم المؤكسج وغير المؤكسج.</li>
+            <li><strong>التكاثر:</strong> الإخصاب خارجي في معظم البرمائيات، وتضع بيوضاً بدون قشور صلبة (تكون مغطاة بمادة هلامية) في الماء.</li>
+            <li><strong>دورة الحياة:</strong> تمر بدورة حياة تتضمن مرحلة التحول (Metamorphosis) من الشكل المائي (اليرقة) إلى الشكل البري (البالغ).</li>
+        </ul>
+        
+        <div class="footer">بحث البرمائيات - إعداد الطالب: راكان محمد ال موسى</div>
+    </div>
+
+    <!-- صفحة المحتوى 2 -->
+    <div class="page">
+        <h2>تصنيف البرمائيات</h2>
+        <p>تنقسم البرمائيات إلى ثلاث رتب رئيسية حسب قدرتها على الحركة ووجود الأطراف:</p>
+        
+        <h3>1. عديمة الأطراف (Apoda)</h3>
+        <p>تُعرف أيضاً بالديدان البرمائية (Caecilians). تتميز بجسم طويل أسطواني يشبه الديدان أو الثعابين، وتفتقر تماماً إلى الأطراف. تعيش معظمها تحت الأرض في المناطق الاستوائية الرطبة، وتتغذى على اللافقاريات الصغيرة.</p>
+        <div class="img-container">
+            <img src="https://i.postimg.cc/gk30tb9w/images.jpg" alt="برمائي عديم الأطراف">
+            <div class="img-caption">شكل (2): دودة برمائية (عديمة الأطراف).</div>
+        </div>
+
+        <h3>2. ذوات الذيل (Urodela)</h3>
+        <p>تشمل السلمندرات (Salamanders) وسمندل الماء. تتميز بوجود ذيل طويل وأربعة أطراف. تعيش في البيئات الرطبة بالقرب من الجداول والمستنقعات، وبعضها قادر على تجديد أطرافه المفقودة.</p>
+        <div class="img-container">
+            <img src="https://i.postimg.cc/5Ngh2sLR/pngtree-spotted-salamander-isolated-on-a-transparent-background-png-image-21275602.png" alt="سلمندر">
+            <div class="img-caption">شكل (3): سلمندر مرقط (من ذوات الذيل).</div>
+        </div>
+        
+        <div class="footer">بحث البرمائيات - إعداد الطالب: راكان محمد ال موسى</div>
+    </div>
+
+    <!-- صفحة المحتوى 3 -->
+    <div class="page">
+        <h3>3. عديمة الذيل (Anura)</h3>
+        <p>تشمل الضفادع (Frogs) والعلاجيم (Toads). وهي الأكثر شيوعاً وانتشاراً. تتميز بغياب الذيل في مرحلة البلوغ، ووجود أرجل خلفية طويلة وقوية مخصصة للقفز. الضفادع عادة ما تكون رطبة الجلد وتعيش قرب الماء، بينما العلاجيم جلدها أكثر جفافاً وخشونة وتعيش في مناطق أكثر جفافاً.</p>
+        <div class="img-container">
+            <img src="https://i.postimg.cc/4y93Trmz/images-(3).jpg" alt="دورة حياة الضفدع">
+            <div class="img-caption">شكل (4): دورة حياة الضفدع (التحول).</div>
+        </div>
+
+        <h2>دورة حياة البرمائيات (التحول)</h2>
+        <p>تمر البرمائيات بمرحلة تحول (Metamorphosis) مثيرة للاهتمام، خاصة الضفادع. تبدأ الحياة كبيضة توضع في الماء، ثم تفقس لتخرج يرقات (أبو ذنيبة) تتنفس بالخياشيم وتتحرك بذيلها للسباحة. مع مرور الوقت، تنمو الأطراف وتختفي الخياشيم ويحل محلها الرئتان، حتى يصبح الحيوان قادراً على الخروج إلى اليابسة. هذا التحول يجعل البرمائيات فريدة بين الفقاريات.</p>
+        
+        <div class="footer">بحث البرمائيات - إعداد الطالب: راكان محمد ال موسى</div>
+    </div>
+
+    <!-- صفحة المحتوى 4 -->
+    <div class="page">
+        <h2>أهمية البرمائيات في النظام البيئي</h2>
+        <p>تلعب البرمائيات أدواراً حيوية ومتعددة في البيئة، وتعتبر مؤشراً مهماً على صحة النظم البيئية:</p>
+        <ul>
+            <li><strong>التوازن البيئي ومكافحة الآفات:</strong> تتغذى البرمائيات على كميات كبيرة من الحشرات، مما يحد من انتشار الآفات الزراعية والبعوض الناقل للأمراض مثل الملاريا.</li>
+            <li><strong>السلسلة الغذائية:</strong> تُعد غذاءً رئيسياً للعديد من الطيور، والأسماك، والثدييات، والزواحف. اختفاؤها يؤثر سلباً على هذه الكائنات.</li>
+            <li><strong>المؤشرات الحيوية:</strong> نظراً لحساسية جلدها النفاذ، تُستخدم البرمائيات كمؤشر حيوي على تلوث البيئة؛ فتراجع أعدادها أو ظهور تشوهات فيها يدل على تدهور النظام البيئي وتلوث المياه.</li>
+            <li><strong>المجال الطبي والعلمي:</strong> تستخلص بعض المواد من جلد وإفرازات بعض الضفادع لاستخدامها في تصنيع أدوية مضادة للالتهابات، والمسكنات، وبعض المضادات الحيوية. كما تُستخدم الضفادع في التجارب العلمية لدراسة وظائف الأعضاء.</li>
+        </ul>
+
+        <h2>التهديدات التي تواجه البرمائيات</h2>
+        <p>تواجه البرمائيات في العصر الحديث تهديدات عديدة أدت إلى انقراض بعض أنواعها وتراجع أعدادها بشكل كبير، ومن أهم هذه التهديدات:</p>
+        <ol>
+            <li><strong>تدمير الموائل الطبيعية:</strong> تجفيف المستنقعات والبرك، وقطع الغابات، وبناء المدن، مما يقضي على أماكن تكاثرها.</li>
+            <li><strong>التلوث البيئي:</strong> المبيدات الحشرية، والمخلفات الصناعية، والأمطار الحمضية التي تتسرب إلى المياه وتؤثر على جلد البرمائيات وبيوضها.</li>
+            <li><strong>تغير المناخ:</strong> ارتفاع درجات الحرارة وتغير أنماط الأمطار يؤثر على دورة تكاثرها.</li>
+            <li><strong>الأمراض والأنواع الدخيلة:</strong> انتشار فطريات خطيرة (مثل فطر Chytrid) تسبب نفوقاً جماعياً للبرمائيات، بالإضافة إلى إدخال أنواع غازية تتغذى عليها.</li>
+        </ol>
+
+        <h2>الخاتمة</h2>
+        <p>في ختام هذا البحث، ندرك أن البرمائيات ليست مجرد كائنات بسيطة تعيش في البرك، بل هي جزء لا يتجزأ من النظام البيئي وتؤدي أدواراً حيوية للحفاظ على توازن الطبيعة. إن حماية البرمائيات والحفاظ على موائلها الطبيعية الرطبة هي مسؤولية تقع على عاتقنا جميعاً للحفاظ على التنوع البيولوجي وكوكب الأرض.</p>
+
+        <div class="footer">بحث البرمائيات - إعداد الطالب: راكان محمد ال موسى</div>
+    </div>
+
+    <!-- صفحة المراجع -->
+    <div class="page">
+        <h2>المراجع</h2>
+        <ol>
+            <li>كتاب الأحياء، نظام المقررات، المستوى الثالث، وزارة التعليم السعودية.</li>
+            <li>موسوعة ويكيبيديا العربية - مقالة "برمائيات".</li>
+            <li>الموقع الرسمي للهيئة الوطنية للحياة الفطرية (المملكة العربية السعودية).</li>
+            <li>موسوعة بريتانيكا (Britannica) - قسم البرمائيات.</li>
+        </ol>
+        
+        <div class="img-container" style="margin-top: 50px;">
+            <img src="https://i.postimg.cc/TY3kCfW8/images-(2).jpg" alt="ضفدع في الطبيعة">
+            <div class="img-caption">شكل (5): البرمائيات في موائلها الطبيعية.</div>
+        </div>
+
+        <div class="footer">بحث البرمائيات - إعداد الطالب: راكان محمد ال موسى</div>
+    </div>
+
+</body>
+</html>
